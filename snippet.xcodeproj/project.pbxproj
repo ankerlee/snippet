@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220A0CD719C97D4A00707A1D /* UIImage+util.m in Sources */ = {isa = PBXBuildFile; fileRef = 220A0CD619C97D4A00707A1D /* UIImage+util.m */; };
+		220A0CDA19C97E9000707A1D /* UIColor+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 220A0CD919C97E9000707A1D /* UIColor+Util.m */; };
 		224676A219C7E05600281AE4 /* NSDate+util.m in Sources */ = {isa = PBXBuildFile; fileRef = 2246769719C7E05600281AE4 /* NSDate+util.m */; };
 		224676A319C7E05600281AE4 /* NSString+util.m in Sources */ = {isa = PBXBuildFile; fileRef = 2246769919C7E05600281AE4 /* NSString+util.m */; };
 		224676A419C7E05600281AE4 /* UIView+event.m in Sources */ = {isa = PBXBuildFile; fileRef = 2246769B19C7E05600281AE4 /* UIView+event.m */; };
@@ -38,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		220A0CD519C97D4A00707A1D /* UIImage+util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+util.h"; sourceTree = "<group>"; };
+		220A0CD619C97D4A00707A1D /* UIImage+util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+util.m"; sourceTree = "<group>"; };
+		220A0CD819C97E9000707A1D /* UIColor+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Util.h"; sourceTree = "<group>"; };
+		220A0CD919C97E9000707A1D /* UIColor+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Util.m"; sourceTree = "<group>"; };
 		2246769619C7E05600281AE4 /* NSDate+util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+util.h"; sourceTree = "<group>"; };
 		2246769719C7E05600281AE4 /* NSDate+util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+util.m"; sourceTree = "<group>"; };
 		2246769819C7E05600281AE4 /* NSString+util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+util.h"; sourceTree = "<group>"; };
@@ -107,6 +113,10 @@
 				2246769F19C7E05600281AE4 /* UIView+nib.m */,
 				224676A019C7E05600281AE4 /* UIView+position.h */,
 				224676A119C7E05600281AE4 /* UIView+position.m */,
+				220A0CD519C97D4A00707A1D /* UIImage+util.h */,
+				220A0CD619C97D4A00707A1D /* UIImage+util.m */,
+				220A0CD819C97E9000707A1D /* UIColor+Util.h */,
+				220A0CD919C97E9000707A1D /* UIColor+Util.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -283,7 +293,9 @@
 				224676A519C7E05600281AE4 /* UIView+image.m in Sources */,
 				224676A719C7E05600281AE4 /* UIView+position.m in Sources */,
 				224676A319C7E05600281AE4 /* NSString+util.m in Sources */,
+				220A0CD719C97D4A00707A1D /* UIImage+util.m in Sources */,
 				224676A619C7E05600281AE4 /* UIView+nib.m in Sources */,
+				220A0CDA19C97E9000707A1D /* UIColor+Util.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

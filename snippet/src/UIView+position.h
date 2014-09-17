@@ -51,4 +51,7 @@
 
 - (void)removeAllSubviews;
 
+- (void)pinSubview:(UIView *)subview toEdge:(NSLayoutAttribute)attribute;
+- (void)pinAllEdgesOfSubview:(UIView *)subview;
+
 @end
