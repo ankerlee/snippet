@@ -249,4 +249,9 @@
     }
     return [self drawInRect:rect withFont:font lineBreakMode:lineBreakMode alignment:alignment];
 }
+
+- (NSInteger)numberOfLines
+{
+    return [[self componentsSeparatedByString:@"\n"] count] + 1;
+}
 @end
