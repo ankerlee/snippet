@@ -29,7 +29,7 @@
 
 - (NSDate *)firstDayOfWeek;
 
-- (NSDate *)endDayOfWeek;
+- (NSDate *)lastDayOfWeek;
 
 - (NSInteger)dayOfWeek;
 

@@ -76,7 +76,7 @@
 
 - (NSDate *)lastDayOfMonth
 {
-    return [[[self beginningOfMonth] dateAfterMonth:1] dateAfterDay:-1];
+    return [[[self firstDayOfMonth] dateAfterMonth:1] dateAfterDay:-1];
 }
 
 - (NSDate *)firstDayOfWeek
@@ -97,7 +97,7 @@
     return [calendar dateFromComponents:components];
 }
 
-- (NSDate *)endDayOfWeek
+- (NSDate *)lastDayOfWeek
 {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *weekdayComponents = [calendar components:NSWeekdayCalendarUnit fromDate:self];
@@ -118,7 +118,7 @@
 {
     int i;
     NSInteger year = [self year];
-    NSDate *date = [self endOfWeek];
+    NSDate *date = [self lastDayOfWeek];
     for (i = 1;[[date dateAfterDay:-7 * i] year] == year;i++){}
     return i;
 }
@@ -149,7 +149,7 @@
 
 - (NSString *)stringDistanceToCurrentDate:(BOOL)againstMidnight
 {
-    NSInteger daysAgo = (againstMidnight) ? [self daysAgoAgainstMidnight] : [self daysAgo];
+    NSInteger daysAgo = (againstMidnight) ? [self distanceToCurrentDateMidnight] : [self distanceToCurrentDate];
     NSString *text = nil;
     switch (daysAgo) {
         case 0:
