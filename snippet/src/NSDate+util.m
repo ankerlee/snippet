@@ -136,7 +136,7 @@
 - (NSInteger)distanceToCurrentDateMidnight
 {
     NSDateFormatter *mdf = [[NSDateFormatter alloc] init];
-    mdf.locale = [[NSLocale alloc] initWithLocaleIdentifier:[NSDate __locale]];
+    mdf.locale = [[NSLocale alloc] initWithLocaleIdentifier:[NSDate locale]];
     [mdf setDateFormat:@"yyyy-MM-dd"];
     NSDate *midnight = [mdf dateFromString:[mdf stringFromDate:self]];
     return (int)[midnight timeIntervalSinceNow] / (60*60*24) * -1;
@@ -173,7 +173,7 @@
 - (NSString *)stringWithFormat:(NSString *)format
 {
     NSDateFormatter *outputFormatter = [[NSDateFormatter alloc] init];
-    outputFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:[self __locale]];
+    outputFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:[self locale]];
     [outputFormatter setDateFormat:format];
     NSString *timestamp_str = [outputFormatter stringFromDate:self];
     return timestamp_str;
@@ -185,7 +185,7 @@
 
 + (NSDate *)dateFromString:(NSString *)string withFormat:(NSString *)format {
     NSDateFormatter *inputFormatter = [[NSDateFormatter alloc] init];
-    inputFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:[NSDate __locale]];
+    inputFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:[NSDate locale]];
     [inputFormatter setDateFormat:format];
     NSDate *date = [inputFormatter dateFromString:string];
     return date;
@@ -193,7 +193,7 @@
 
 - (NSString *)stringWithDateStyle:(NSDateFormatterStyle)dateStyle timeStyle:(NSDateFormatterStyle)timeStyle {
     NSDateFormatter *outputFormatter = [[NSDateFormatter alloc] init];
-    outputFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:[NSDate __locale]];
+    outputFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:[NSDate locale]];
     [outputFormatter setDateStyle:dateStyle];
     [outputFormatter setTimeStyle:timeStyle];
     NSString *outputString = [outputFormatter stringFromDate:self];
@@ -207,7 +207,7 @@
                                                      fromDate:today];
     NSDate *midnight = [calendar dateFromComponents:offsetComponents];
     NSDateFormatter *displayFormatter = [[NSDateFormatter alloc] init];
-    displayFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:[NSDate __locale]];
+    displayFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:[NSDate locale]];
     NSString *displayString = nil;
     // 比较是否在当天
     if ([date compare:midnight] == NSOrderedDescending) {
@@ -266,14 +266,14 @@
     return @"yyyy-MM-dd HH:mm:ss";
 }
 
--(NSString *)__locale{
+-(NSString *)locale{
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSArray *languages = [defaults objectForKey:@"AppleLanguages"];
     NSString *currentLanguage = [languages objectAtIndex:0];
     return currentLanguage;
 }
 
-+(NSString *)__locale{
++(NSString *)locale{
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSArray *languages = [defaults objectForKey:@"AppleLanguages"];
     NSString *currentLanguage = [languages objectAtIndex:0];

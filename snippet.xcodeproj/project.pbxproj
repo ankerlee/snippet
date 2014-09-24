@@ -15,6 +15,13 @@
 		224676A519C7E05600281AE4 /* UIView+image.m in Sources */ = {isa = PBXBuildFile; fileRef = 2246769D19C7E05600281AE4 /* UIView+image.m */; };
 		224676A619C7E05600281AE4 /* UIView+nib.m in Sources */ = {isa = PBXBuildFile; fileRef = 2246769F19C7E05600281AE4 /* UIView+nib.m */; };
 		224676A719C7E05600281AE4 /* UIView+position.m in Sources */ = {isa = PBXBuildFile; fileRef = 224676A119C7E05600281AE4 /* UIView+position.m */; };
+		228AADDD19D2812000E90D49 /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 228AADDB19D2812000E90D49 /* bubble.png */; };
+		228AADDE19D2812000E90D49 /* bubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 228AADDC19D2812000E90D49 /* bubble@2x.png */; };
+		228AADDF19D2813A00E90D49 /* UIImage+util.m in Sources */ = {isa = PBXBuildFile; fileRef = 220A0CD619C97D4A00707A1D /* UIImage+util.m */; };
+		228AADE119D281ED00E90D49 /* ImageUtilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 228AADE019D281ED00E90D49 /* ImageUtilTest.m */; };
+		228AADE519D2848E00E90D49 /* DemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 228AADE319D2848E00E90D49 /* DemoVC.m */; };
+		228AADE619D2848E00E90D49 /* DemoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 228AADE419D2848E00E90D49 /* DemoVC.xib */; };
+		228AADE819D286C400E90D49 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 228AADE719D286C400E90D49 /* icon@2x.png */; };
 		22F6F4AB19ADDBD400CC95B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F6F4AA19ADDBD400CC95B9 /* Foundation.framework */; };
 		22F6F4AD19ADDBD400CC95B9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F6F4AC19ADDBD400CC95B9 /* CoreGraphics.framework */; };
 		22F6F4AF19ADDBD400CC95B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F6F4AE19ADDBD400CC95B9 /* UIKit.framework */; };
@@ -56,6 +63,13 @@
 		2246769F19C7E05600281AE4 /* UIView+nib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+nib.m"; sourceTree = "<group>"; };
 		224676A019C7E05600281AE4 /* UIView+position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+position.h"; sourceTree = "<group>"; };
 		224676A119C7E05600281AE4 /* UIView+position.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+position.m"; sourceTree = "<group>"; };
+		228AADDB19D2812000E90D49 /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
+		228AADDC19D2812000E90D49 /* bubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bubble@2x.png"; sourceTree = "<group>"; };
+		228AADE019D281ED00E90D49 /* ImageUtilTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtilTest.m; sourceTree = "<group>"; };
+		228AADE219D2848E00E90D49 /* DemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoVC.h; sourceTree = "<group>"; };
+		228AADE319D2848E00E90D49 /* DemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoVC.m; sourceTree = "<group>"; };
+		228AADE419D2848E00E90D49 /* DemoVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoVC.xib; sourceTree = "<group>"; };
+		228AADE719D286C400E90D49 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		22F6F4A719ADDBD400CC95B9 /* snippet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snippet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F6F4AA19ADDBD400CC95B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		22F6F4AC19ADDBD400CC95B9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -121,6 +135,16 @@
 			path = src;
 			sourceTree = "<group>";
 		};
+		228AADDA19D280EB00E90D49 /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				228AADE719D286C400E90D49 /* icon@2x.png */,
+				228AADDB19D2812000E90D49 /* bubble.png */,
+				228AADDC19D2812000E90D49 /* bubble@2x.png */,
+			);
+			path = imgs;
+			sourceTree = "<group>";
+		};
 		22F6F49E19ADDBD400CC95B9 = {
 			isa = PBXGroup;
 			children = (
@@ -154,11 +178,15 @@
 		22F6F4B019ADDBD400CC95B9 /* snippet */ = {
 			isa = PBXGroup;
 			children = (
+				228AADDA19D280EB00E90D49 /* imgs */,
 				2246769519C7E05600281AE4 /* src */,
 				22F6F4B919ADDBD400CC95B9 /* AppDelegate.h */,
 				22F6F4BA19ADDBD400CC95B9 /* AppDelegate.m */,
 				22F6F4BC19ADDBD400CC95B9 /* Images.xcassets */,
 				22F6F4B119ADDBD400CC95B9 /* Supporting Files */,
+				228AADE219D2848E00E90D49 /* DemoVC.h */,
+				228AADE319D2848E00E90D49 /* DemoVC.m */,
+				228AADE419D2848E00E90D49 /* DemoVC.xib */,
 			);
 			path = snippet;
 			sourceTree = "<group>";
@@ -179,6 +207,7 @@
 			children = (
 				22F6F4CF19ADDBD400CC95B9 /* snippetTests.m */,
 				22F6F4CA19ADDBD400CC95B9 /* Supporting Files */,
+				228AADE019D281ED00E90D49 /* ImageUtilTest.m */,
 			);
 			path = snippetTests;
 			sourceTree = "<group>";
@@ -267,7 +296,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				22F6F4B519ADDBD400CC95B9 /* InfoPlist.strings in Resources */,
+				228AADE619D2848E00E90D49 /* DemoVC.xib in Resources */,
 				22F6F4BD19ADDBD400CC95B9 /* Images.xcassets in Resources */,
+				228AADDE19D2812000E90D49 /* bubble@2x.png in Resources */,
+				228AADE819D286C400E90D49 /* icon@2x.png in Resources */,
+				228AADDD19D2812000E90D49 /* bubble.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +321,7 @@
 			files = (
 				22F6F4BB19ADDBD400CC95B9 /* AppDelegate.m in Sources */,
 				22F6F4B719ADDBD400CC95B9 /* main.m in Sources */,
+				228AADE519D2848E00E90D49 /* DemoVC.m in Sources */,
 				224676A219C7E05600281AE4 /* NSDate+util.m in Sources */,
 				224676A419C7E05600281AE4 /* UIView+event.m in Sources */,
 				224676A519C7E05600281AE4 /* UIView+image.m in Sources */,
@@ -303,7 +337,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				228AADE119D281ED00E90D49 /* ImageUtilTest.m in Sources */,
 				22F6F4D019ADDBD400CC95B9 /* snippetTests.m in Sources */,
+				228AADDF19D2813A00E90D49 /* UIImage+util.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,13 @@
 
 @interface UIColor (Util)
 
-///颜色加深，返回新的颜色
+/**
+ *  加深颜色
+ *
+ *  @param value 加深值
+ *
+ *  @return 加深后的新颜色
+ */
 - (UIColor *)colorByDarkeningColorWithValue:(CGFloat)value;
 
 @end

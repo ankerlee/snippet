@@ -55,8 +55,8 @@
 + (NSString *)timeFormatString;
 + (NSString *)timestampFormatString;
 
--(NSString *)__locale;
+-(NSString *)locale;
 
-+(NSString *)__locale;
++(NSString *)locale;
 
 @end
