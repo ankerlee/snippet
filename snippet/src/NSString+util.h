@@ -48,21 +48,12 @@ typedef enum {
 /**
  *  文本自适应尺寸计算
  *
- *  @param font              字体
- *  @param constrainedToSize 约束尺寸
- *
- *  @return 自适应尺寸
- */
-- (CGSize)sizeWithFont:(UIFont *)font constrainedToSize:(CGSize)constrainedToSize;
-/**
- *  文本自适应尺寸计算
- *
  *  @param text              需要计算的文本
  *  @param font              字体
  *  @param constrainedToSize 约束尺寸
  *
  *  @return 自适应尺寸
  */
-+ (CGSize)sizeForText:(NSString *)text WithFont:(UIFont *)font constrainedToSize:(CGSize)constrainedToSize;
++ (CGSize)sizeForText:(NSString *)text withFont:(UIFont *)font constrainedToSize:(CGSize)constrainedToSize;
 
 @end

@@ -255,18 +255,13 @@
     return [[self componentsSeparatedByString:@"\n"] count] + 1;
 }
 
-- (CGSize)sizeWithFont:(UIFont *)font constrainedToSize:(CGSize)constrainedToSize
-{
-    return [NSString sizeForText:self WithFont:font constrainedToSize:constrainedToSize];
-}
-
-+(CGSize)sizeForText:(NSString *)text WithFont:(UIFont *)font constrainedToSize:(CGSize)constrainedToSize{
++(CGSize)sizeForText:(NSString *)text withFont:(UIFont *)font constrainedToSize:(CGSize)constrainedToSize{
     CGFloat maxWidth = constrainedToSize.width;
     CGFloat maxHeight = constrainedToSize.height;
     
     CGSize stringSize;
     
-    if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_0) {
+    if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_6_1) {
         CGRect stringRect = [text boundingRectWithSize:CGSizeMake(maxWidth, maxHeight)
                                                options:NSStringDrawingUsesLineFragmentOrigin
                                             attributes:@{ NSFontAttributeName : font }
