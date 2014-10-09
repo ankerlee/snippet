@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "snippet"
-  s.version          = "1.0.9"
+  s.version          = "1.1.0"
   s.summary          = "code snippets used on iOS."
   s.description      = "IOS工具集[代码段]，包括UIView工具集（定位、尺寸、快照、事件）、字符串工具集（略）、日期工具集（略）"
   s.homepage         = "https://github.com/ankerlee/snippet"
