@@ -11,17 +11,17 @@
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>60A049A446F4569EB3F8614C470F9A67D3CD7308</key>
-		<string>https://github.com/ankerlee/snippet.git</string>
+		<string>github.com:ankerlee/snippet.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>snippet.xcodeproj/project.xcworkspace</string>
+	<string>snippet.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>60A049A446F4569EB3F8614C470F9A67D3CD7308</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/ankerlee/snippet.git</string>
+	<string>github.com:ankerlee/snippet.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
