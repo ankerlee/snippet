@@ -274,7 +274,7 @@
                       constrainedToSize:CGSizeMake(maxWidth, maxHeight)];
     }
     
-    return CGSizeMake(roundf(stringSize.width), roundf(stringSize.height));
+    return CGSizeMake(ceilf(stringSize.width), ceilf(stringSize.height));
 }
 
 @end
